@@ -10,3 +10,10 @@
 // Postman API
 // Insomnia API
 // Thunder Client (VSCode Extension)
+
+
+// SVOLGIMENTO
+
+//prendo l'elemento ul tramite l'id
+const emailsElement = document.getElementById('email-container');
+console.log(emailsElement);
