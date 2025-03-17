@@ -28,6 +28,8 @@ for (let i=0; i < 10; i++) {
 
     const email = response.data.response; 
     console.log(email)
-    
+
+    emailsElement.innerHTML += `<li>${email}</li>`
+
   });
 }
