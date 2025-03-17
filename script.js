@@ -17,3 +17,10 @@
 //prendo l'elemento ul tramite l'id
 const emailsElement = document.getElementById('email-container');
 console.log(emailsElement);
+
+// utilizzo axios per stampare l'indirizzo web fornito
+const uri = 'https://flynn.boolean.careers/exercises/api/random/mail';
+axios.get(uri)
+  .then(response => {
+    console.log(response.data)
+  });
