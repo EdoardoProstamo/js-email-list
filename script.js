@@ -25,6 +25,9 @@ const uri = 'https://flynn.boolean.careers/exercises/api/random/mail';
 for (let i=0; i < 10; i++) {
  axios.get(uri)
   .then(response => {
-    console.log(response.data)
+
+    const email = response.data.response; 
+    console.log(email)
+    
   });
 }
