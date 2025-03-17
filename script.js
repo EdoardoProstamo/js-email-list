@@ -20,7 +20,11 @@ console.log(emailsElement);
 
 // utilizzo axios per stampare l'indirizzo web fornito
 const uri = 'https://flynn.boolean.careers/exercises/api/random/mail';
-axios.get(uri)
+
+// creo un ciclo for per generare 10 email diverse
+for (let i=0; i < 10; i++) {
+ axios.get(uri)
   .then(response => {
     console.log(response.data)
   });
+}
